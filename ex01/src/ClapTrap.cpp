@@ -14,11 +14,11 @@
 #include <iostream>
 #include <string>
 
-ClapTrap::ClapTrap(): _name("Johnny"), _hp(100), _ep(50), _ad(20) {
+ClapTrap::ClapTrap():  _hp(100), _ep(10), _ad(0), _name("Johnny") {
 	std::cout << this->_name << red << " ClapTrap " << reset << " created." << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name): _name(name), _hp(100), _ep(50), _ad(20){
+ClapTrap::ClapTrap(std::string name): _hp(100), _ep(10), _ad(0), _name(name){
 	std::cout << this->_name << red << " ClapTrap " << reset << " created." << std::endl;
 }
 

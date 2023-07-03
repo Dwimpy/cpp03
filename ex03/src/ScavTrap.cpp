@@ -15,7 +15,7 @@
 #include <iostream>
 #include <string>
 
-ScavTrap::ScavTrap(void): ClapTrap("Gregory"), _st_hp(ClapTrap::_hp), _st_ep(ClapTrap::_ep), _st_ad(ClapTrap::_ad), _guard_gate(false){
+ScavTrap::ScavTrap(void): ClapTrap("Gregory"), _st_hp(ClapTrap::_hp), _st_ep(50), _st_ad(20), _guard_gate(false){
 	std::cout << this->getName() << blue << " ScavTrap" << reset << " created." << std::endl;
 }
 

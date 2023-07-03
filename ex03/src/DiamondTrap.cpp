@@ -14,14 +14,14 @@
 #include <iostream>
 #include <string>
 
-DiamondTrap::DiamondTrap(): ClapTrap("HardShell_clap_trap"), _name("HardShell") {
+DiamondTrap::DiamondTrap(): ClapTrap("HardShell_clap_trap"), ScavTrap(), FragTrap(), _name("HardShell") {
 	this->_dt_hp = this->FragTrap::_ft_hp;
 	this->_dt_ep = this->ScavTrap::_st_ep;
 	this->_dt_ad = this->FragTrap::_ft_ad;
 	std::cout << this->_name << magenta << " DiamondTrap " << reset << " created." << std::endl;
 }
 
-DiamondTrap::DiamondTrap(std::string name): ClapTrap(name + "_clap_trap"), _name(name){
+DiamondTrap::DiamondTrap(std::string name): ClapTrap(name + "_clap_trap"), ScavTrap(), FragTrap(), _name(name){
 	this->_hp = this->FragTrap::_ft_hp;
 	this->_ep = this->ScavTrap::_st_ep;
 	this->_ad = this->FragTrap::_ft_ad;

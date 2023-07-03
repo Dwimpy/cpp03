@@ -14,7 +14,7 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
-int main(int argc, char **argv)
+int main()
 {
 	ClapTrap c("John");
 	ClapTrap p;

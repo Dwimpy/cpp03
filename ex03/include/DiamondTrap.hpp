@@ -17,10 +17,6 @@
 #include <string>
 
 class DiamondTrap: public ScavTrap, public FragTrap{
-		protected:
-			unsigned int _dt_hp;
-			unsigned int _dt_ep;
-			unsigned int _dt_ad;
 		public:
 			DiamondTrap();
 			DiamondTrap(std::string name);
@@ -33,5 +29,7 @@ class DiamondTrap: public ScavTrap, public FragTrap{
 			using ScavTrap::attack;
 		private:
 			const std::string _name;
-
+			unsigned int _dt_hp;
+			unsigned int _dt_ep;
+			unsigned int _dt_ad;
 };

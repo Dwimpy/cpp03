@@ -12,7 +12,7 @@
 
 #include "ScavTrap.hpp"
 
-int main(int argc, char **argv)
+int main()
 {
 	ClapTrap c("John");
 	ClapTrap p;

@@ -6,7 +6,7 @@
 /*   By: arobu <arobu@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 16:28:37 by arobu             #+#    #+#             */
-/*   Updated: 2023/06/26 16:58:26 by arobu            ###   ########.fr       */
+/*   Updated: 2023/07/03 14:44:25 by arobu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ClapTrap{
 			~ClapTrap();
 			ClapTrap(ClapTrap const &copy);
 			ClapTrap &operator=(ClapTrap const &copy);
+			const std::string &getName() const;
 			void attack(std::string const &target);
 			void takeDamage(unsigned int amount);
 			void beRepaired(unsigned int amount);
@@ -36,15 +37,4 @@ class ClapTrap{
 			unsigned int _ep;
 			unsigned int _ad;
 
-			const std::string &getName() const;
-
-			void setName(const std::string &name);
-
-			void setHealth(unsigned int &health);
-
-			void setEnergy(unsigned int &energy);
-
-			void setAd(unsigned int &ad);
-
-			unsigned int getAd();
 };
