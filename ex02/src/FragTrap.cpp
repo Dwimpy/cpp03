@@ -6,7 +6,7 @@
 /*   By: arobu <arobu@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/30 13:29:50 by arobu             #+#    #+#             */
-/*   Updated: 2023/06/30 13:29:52 by arobu            ###   ########.fr       */
+/*   Updated: 2023/07/03 14:53:11 by arobu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <iostream>
 
 FragTrap::FragTrap(): ClapTrap("Froggy") {
-	this->_hp = ClapTrap::_hp;
 	this->_ep = 100;
 	this->_ad = 30;
 	std::cout << this->getName() << green << " FragTrap " << reset << "created." << std::endl;

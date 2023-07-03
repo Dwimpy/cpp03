@@ -6,7 +6,7 @@
 /*   By: arobu <arobu@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 16:28:39 by arobu             #+#    #+#             */
-/*   Updated: 2023/06/26 16:59:59 by arobu            ###   ########.fr       */
+/*   Updated: 2023/07/03 14:50:49 by arobu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #include <iostream>
 #include <string>
 
-ClapTrap::ClapTrap(): _hp(100), _ep(50), _ad(20), _name("Johnny") {
+ClapTrap::ClapTrap(): _hp(100), _ep(10), _ad(0), _name("Johnny") {
 	std::cout << this->_name << red << " ClapTrap " << reset << " created." << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name): _hp(100), _ep(50), _ad(20),  _name(name){
+ClapTrap::ClapTrap(std::string name): _hp(100), _ep(10), _ad(0),  _name(name){
 	std::cout << this->_name << red << " ClapTrap " << reset << " created." << std::endl;
 }
 
