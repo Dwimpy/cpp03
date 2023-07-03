@@ -6,7 +6,7 @@
 /*   By: arobu <arobu@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/26 17:07:54 by arobu             #+#    #+#             */
-/*   Updated: 2023/07/03 14:52:09 by arobu            ###   ########.fr       */
+/*   Updated: 2023/07/03 14:56:32 by arobu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include <string>
 
 ScavTrap::ScavTrap(void): ClapTrap("Gregory"), _guard_gate(false){
-	std::cout << this->_hp;
 	this->_ep = 50;
 	this->_ad = 20;
 	std::cout << this->getName() << blue << " ScavTrap" << reset << " created." << std::endl;
